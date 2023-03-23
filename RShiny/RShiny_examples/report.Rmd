@@ -2,7 +2,10 @@
 title: "Dynamic report"
 output: html_document
 params:
-  n: NA
+  n:
+  plot: 
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r}
@@ -10,8 +13,9 @@ params:
 params$n
 ```
 
-A plot of `params$n` random points.
+A plot of `params$n` 
 
 ```{r}
-plot(rnorm(params$n), rnorm(params$n))
+
+params$plot
 ```
